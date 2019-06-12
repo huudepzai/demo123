@@ -1,3 +1,3 @@
 <?php 
-  echo 'dfdfdfdsfdsfefeger';
+  echo '{access_token:dfdfdfdsfdsfefeger}';
 ?>

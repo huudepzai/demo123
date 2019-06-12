@@ -5,7 +5,7 @@ if($_REQUEST['login_id']){
   $loginid = "";
 }
 $array = [
-  'acccess_token' => '21312343rbvhbvgbfhgbfhgbfh'.$$loginid
+  'access_token' => '21312343rbvhbvgbfhgbfhgbfh'.$$loginid
 ];
   echo json_encode($array);
 ?>

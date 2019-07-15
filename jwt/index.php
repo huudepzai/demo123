@@ -7,7 +7,11 @@ $jwt = $_GET['access_token'];
 
 try {
     $decoded = JWT::decode($jwt, $key, array('HS256'));
+} catch(Exception $e){
+    echo 'Error: ',  $e->getMessage(), "\n";
+}
 
+if (!empty($decoded)){
     foreach ($decoded->data as $key => $item){
         if (is_string($item)){
             echo "<b>$key:</b> $item<br/>";
@@ -18,9 +22,6 @@ try {
             }
         }
     }
-} catch(Exception $e){
-    echo 'Error: ',  $e->getMessage(), "\n";
 }
-
 
 ?>

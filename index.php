@@ -19,7 +19,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action = "http://test-onlineacademy.lms.local/benefit-one/sso">
+    <form action="http://test-onlineacademy.lms.local/benefit-one/sso" method="post">
         <input name="sid" placeholder="sid">
         <input name="cid" placeholder="cid">
         <input type="submit" value="SEND">
